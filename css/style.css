@@ -1,0 +1,81 @@
+body{
+	font-family: 'Arial', sans-serif;
+	background: #081F18;
+	color: white;
+	text-align: center;
+}
+h1{
+	font-size: 3em;
+	border: 3px solid white;
+	display: block;
+	width: 300px;
+	padding: .3em;
+	margin: 1em auto;
+}
+
+.item{
+	display: block;
+	margin: 1em;
+}
+
+.blur {
+	-webkit-filter: blur(2px); /*A más pixeles más borroso*/
+	filter: blur(2px);
+}
+
+.Brightness{
+	-webkit-filter: brightness(2); /* 2 = 200% */
+	filter: brightness(2);
+}
+		
+.Contrast{
+	-webkit-filter: contrast(1.5); /* 1.5 = 150% */
+	filter: contrast(1.5);
+}
+
+.Drop-shadow{		
+	-webkit-filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.9));
+	filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.9));
+}
+
+.Grayscale{
+	-webkit-filter: grayscale(100%);    /*tambien del 0 al 100% , 1 = 100%*/
+	filter: grayscale(100%);
+}
+
+.Grayscale:hover{
+	-webkit-filter: initial;
+}
+
+.Hue-rotate{
+	-webkit-filter: hue-rotate(180deg);
+	filter: hue-rotate(180deg);
+/*Se aplica una rotación de matriz en la imagen. El valor define el número de grados alrededor del círculo de color. (360deg. valor máximo ).
+*/
+}
+
+.Invert{
+	-webkit-filter: invert(1); /* 1 = 100% */
+	filter: invert(1);
+}
+
+.Opacity{
+	-webkit-filter: opacity(0.5); /* del 0 al 1 */
+	filter: opacity(0.5);
+}
+
+.Saturate{
+	-webkit-filter: saturate(3); /* 3 = 300% */
+	filter: saturate(3);
+}
+
+.Sepia{
+	-webkit-filter: sepia(100%); /* 1 = 100% , del 0% al 100%*/
+	filter: sepia(100%);
+}
+
+@media (min-width: 900px){
+	.item{
+		display: inline-block;
+	}
+}
